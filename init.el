@@ -22,6 +22,7 @@
 
 (add-to-list 'load-path o2w-dir)
 
+(require 'o2w-packages)
 (require 'o2w-defaults)
 (require 'o2w-php)
 (require 'o2w-css)

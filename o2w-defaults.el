@@ -14,10 +14,6 @@
 (setq-default tab-width 4)
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
 
-
-(prelude-restore-arrow-keys)
-(cua-mode t)
-
 (defun fd-add-file-to-recent ()
   (interactive)
   (when buffer-file-name
@@ -39,6 +35,9 @@
   (prelude-turn-off-whitespace)
 )
 (add-hook 'prelude-prog-mode-hook 'o2w-prog-mode-defaults t)
+
+(prelude-restore-arrow-keys)
+(cua-mode t)
 
 
 (require 'find-file-in-git-repo)
