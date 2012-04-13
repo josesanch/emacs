@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: action Controller
+# key: action
+# --
+public function ${1:name}Action($2)
+{
+        $3;
+}

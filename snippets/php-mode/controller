@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: Controller
+# key: controller
+# --
+<?php
+
+class ${1:name}Controller extends ApplicationController
+{
+    public $layout = "main";
+
+    public function indexAction($id)
+    {
+        $2;
+    }
+
+}
