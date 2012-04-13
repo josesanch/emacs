@@ -19,7 +19,7 @@
   )
 
 
-(add-hook 'js-mode-hook
+(add-hook 'js3-mode-hook
           '(lambda ()
 ;             (o2w-js-vars)
              (o2w-js-key-bindings)
