@@ -1,5 +1,5 @@
 (setq yas/snippet-dirs (concat o2w-dir "snippets/"))
-
+(yas/reload-all)  ; Load the new snipped dir
 
 (setq default-directory "~/Escritorio/Dropbox/web/")
 
@@ -32,6 +32,13 @@
 (require 'auto-complete)
 (global-auto-complete-mode)
 (menu-bar-mode)
+
+; Deactivate whitespace
+(defun o2w-prog-mode-defaults ()
+  "Default coding hook, useful with any programming language."
+  (prelude-turn-off-whitespace)
+)
+(add-hook 'prelude-prog-mode-hook 'o2w-prog-mode-defaults t)
 
 
 (require 'find-file-in-git-repo)
